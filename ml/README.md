@@ -1,13 +1,13 @@
 # ml
 
-Matchmaking pipeline for Catch Fever.
+matchmaking pipeline for catch fever.
 
-1. **Embed** — turn profile answers into vectors with sentence-transformers.
-2. **Enrich** — use Claude Haiku 4.5 to extract personality traits from free-text answers.
-3. **Rank** — score candidate pairs with a LightGBM model.
-4. **Drop** — write each user's weekly matches back to Supabase.
+1. **embed**: turn profile answers into vectors with sentence-transformers.
+2. **enrich**: use claude haiku 4.5 to extract personality traits from free-text answers.
+3. **rank**: score candidate pairs with a lightgbm model.
+4. **drop**: write each user's weekly matches back to supabase.
 
-## Setup
+## setup
 
 ```bash
 python -m venv .venv
@@ -15,4 +15,4 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-`data/` and `models/` are git-ignored. Use synthetic data only until there are real users and a privacy policy.
+`data/` and `models/` are git-ignored. use synthetic data only until there are real users and a privacy policy.
