@@ -1,3 +1,4 @@
+import { supabase } from '@/lib/supabase';
 import { Image } from 'expo-image';
 import { SymbolView } from 'expo-symbols';
 import { Platform, Pressable, ScrollView, StyleSheet } from 'react-native';
@@ -40,6 +41,9 @@ export default function TabTwoScreen() {
       <ThemedView style={styles.container}>
         <ThemedView style={styles.titleContainer}>
           <ThemedText type="subtitle">Explore</ThemedText>
+                    <Pressable onPress={() => supabase.auth.signOut()}>
+            <ThemedText type="link">sign out</ThemedText>
+          </Pressable>
           <ThemedText style={styles.centerText} themeColor="textSecondary">
             This starter app includes example{'\n'}code to help you get started.
           </ThemedText>
