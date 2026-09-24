@@ -1,0 +1,30 @@
+# Secrets — never commit real keys
+.env
+.env.*
+!.env.example
+
+# Node / Expo (app/ has its own .gitignore too)
+node_modules/
+.expo/
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# ML artifacts and data — keep large or private files out of git
+ml/data/*
+!ml/data/.gitkeep
+ml/models/*
+!ml/models/.gitkeep
+*.pkl
+*.joblib
+
+# Supabase local dev
+supabase/.branches/
+supabase/.temp/
+
+# OS / editor
+.DS_Store
+Thumbs.db

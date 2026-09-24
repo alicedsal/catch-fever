@@ -1,0 +1,7 @@
+anthropic
+lightgbm
+pandas
+python-dotenv
+scikit-learn
+sentence-transformers
+supabase
