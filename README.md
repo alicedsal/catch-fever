@@ -2,7 +2,7 @@
 
 a dating app for unc students that matches people on personality, not looks. instead of endless swiping, everyone gets a small set of matches once a week.
 
-> 🚧 in early development.
+> 🫟 in early development.
 
 ## how it works
 
