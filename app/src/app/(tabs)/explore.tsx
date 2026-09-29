@@ -1,5 +1,6 @@
 import { supabase } from '@/lib/supabase';
 import { Image } from 'expo-image';
+import { Link } from 'expo-router';
 import { SymbolView } from 'expo-symbols';
 import { Platform, Pressable, ScrollView, StyleSheet } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -41,6 +42,9 @@ export default function TabTwoScreen() {
       <ThemedView style={styles.container}>
         <ThemedView style={styles.titleContainer}>
           <ThemedText type="subtitle">Explore</ThemedText>
+                    <Link href="/profile">
+            <ThemedText type="link">edit profile</ThemedText>
+          </Link>
                     <Pressable onPress={() => supabase.auth.signOut()}>
             <ThemedText type="link">sign out</ThemedText>
           </Pressable>
